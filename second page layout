@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_hunger_value"
+        android:layout_width="103dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="45dp"
+        android:text="Feed"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_hungry_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_feed" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="29dp"
+        android:text="Clean "
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/txt_clean_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hunger_value" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="118dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="25dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_happy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="58dp"
+        android:text="Feed  "
+        app:layout_constraintBottom_toTopOf="@+id/txt_hunger_value"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="46dp"
+        android:text="Clean "
+        app:layout_constraintBottom_toTopOf="@+id/txt_hungry_value"
+        app:layout_constraintStart_toEndOf="@+id/btn_feed"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btn_Happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="259dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Happy "
+        app:layout_constraintBottom_toTopOf="@+id/txt_hungry_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_next"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_hungry_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/txt_clean_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_hunger_value"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Happy" />
+
+    <EditText
+        android:id="@+id/txt_clean_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/txt_happy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hungry_value" />
+
+    <EditText
+        android:id="@+id/txt_happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_clean_value" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="273dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/feed_dog"
+        app:layout_constraintBottom_toTopOf="@+id/btn_feed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
